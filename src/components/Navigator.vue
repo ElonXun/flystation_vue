@@ -2,7 +2,7 @@
     <div>
       <el-row>
         <el-col :xs="0" :sm="3" :md="3" :lg="3" class="sideCol"></el-col>
-        <el-col :xs="24" :sm="18" :md="18" :lg="18">
+        <el-col :xs="24" :sm="18" :md="18" :lg="18" class="middle_wrapper">
             <div class="logo">
               <img src='../assets/navigator/logo-50.png' height="60px" width="60px" />
             </div>
@@ -60,6 +60,10 @@ export default Vue.extend({
     line-height: 0;
     font-size: 0;
   }
+  .middle_wrapper{
+    height: 60px;
+    line-height: 60px;
+  }
   .logo{
      float: left;
   }
@@ -68,6 +72,8 @@ export default Vue.extend({
   }
   .right_navigator_menu{
     height: 60px;
+    display: inline-block;
+    float: right;
   }
   .right_navigator_menu_item{
     height: 60px;
