@@ -1,6 +1,6 @@
 <template>
     <el-container>
-        <el-header height='50px'>
+        <el-header height='60px'>
             <Navigator></Navigator>
         </el-header>
         <el-main>main</el-main>
@@ -32,7 +32,7 @@ export default Vue.extend({
     .el-header{
         padding: 0px;
         background-color: #fff;
-        height: 50px;
-        line-height: 50px;
+        height: 60px;
+        line-height: 60px;
     }
 </style>
