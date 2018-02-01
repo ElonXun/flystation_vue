@@ -4,13 +4,18 @@
             <Navigator></Navigator>
         </el-header>
         <el-main>
-            <ArticleSelect/>
+            <el-row :gutter="16" style="margin-left: -8px; margin-right: -8px;">
+                <el-col :span="16">
+                    <ArticleSelect/>   
+                </el-col>
+                <el-col :span="8"></el-col>
+            </el-row>
         </el-main>
     </el-container>
 </template>
 
 <script lang="ts">
-import { Button, Select, Container, Header, Main } from 'element-ui';
+import { Button, Select, Container, Header, Main, Row, Col, } from 'element-ui';
 import Navigator from '../components/Navigator.vue';
 import ArticleSelect from '../components/ArticleSelect.vue';
 import Vue, {ComponentOptions} from 'vue';
@@ -21,6 +26,8 @@ export default Vue.extend({
     'el-container':Container,
     'el-header':Header,
     'el-main':Main,
+    'el-row':Row,
+    'el-col':Col,
     'Navigator':Navigator,
     'ArticleSelect':ArticleSelect,
   },
@@ -41,5 +48,7 @@ export default Vue.extend({
     }
     .el-main{
         padding: 0px;
+        margin-top: 16px;
+        overflow: hidden;
     }
 </style>
