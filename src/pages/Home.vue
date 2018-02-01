@@ -3,13 +3,16 @@
         <el-header height='60px'>
             <Navigator></Navigator>
         </el-header>
-        <el-main>main</el-main>
+        <el-main>
+            <ArticleSelect/>
+        </el-main>
     </el-container>
 </template>
 
 <script lang="ts">
 import { Button, Select, Container, Header, Main } from 'element-ui';
 import Navigator from '../components/Navigator.vue';
+import ArticleSelect from '../components/ArticleSelect.vue';
 import Vue, {ComponentOptions} from 'vue';
 export default Vue.extend({
   name: 'HelloWorld',
@@ -19,6 +22,7 @@ export default Vue.extend({
     'el-header':Header,
     'el-main':Main,
     'Navigator':Navigator,
+    'ArticleSelect':ArticleSelect,
   },
   data () {
     return {
@@ -34,5 +38,8 @@ export default Vue.extend({
         background-color: #fff;
         height: 60px;
         line-height: 60px;
+    }
+    .el-main{
+        padding: 0px;
     }
 </style>
