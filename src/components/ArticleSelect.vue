@@ -10,10 +10,6 @@
           </div>
           <div class="article-thumbnail">
               <img src="http://flystation.image.alimmdn.com/blog/blogBackground/tencentBlog.jpg" height="125px" width="200px"/>
-            <!-- <img src={article.blogPicture} height={125} width={200} onClick={()=>{this.setState({ previewImage:article.blogPicture,previewVisible: true,})}}/>
-            <Modal visible={this.state.previewVisible} footer={null} onCancel={this.handleCancel}>
-              <img alt="example" style={{ width: '100%' }} src={this.state.previewImage} />
-            </Modal> -->
           </div>
         </div>
 </template>
