@@ -8,7 +8,9 @@
                 <el-col :span="16">
                     <ArticleSelect/>   
                 </el-col>
-                <el-col :span="8"></el-col>
+                <el-col :span="8">
+                    right
+                </el-col>
             </el-row>
         </el-main>
     </el-container>

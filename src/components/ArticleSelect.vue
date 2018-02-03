@@ -71,11 +71,13 @@ export default Vue.extend({
   font-weight: bold;
   word-wrap: break-word;
   cursor: pointer;
+  margin: 0;
 }
 
 .article-sub-title {
   font-size: 16px;
   position: absolute;
   bottom: 0px;
+  margin: 0;
 }
 </style>
