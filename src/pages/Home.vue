@@ -4,13 +4,19 @@
             <Navigator></Navigator>
         </el-header>
         <el-main>
-            <el-row :gutter="16" style="margin-left: -8px; margin-right: -8px;">
-                <el-col :span="16">
-                    <ArticleSelect/>   
+            <el-row>
+                <el-col :xs="0" :sm="3" :md="3" :lg="3">&nbsp;</el-col>
+                <el-col :xs="24" :sm="18" :md="18" :lg="18">
+                    <el-row :gutter="16" style="margin-left: -8px; margin-right: -8px;">
+                        <el-col :span="16">
+                            <ArticleSelect/>   
+                        </el-col>
+                        <el-col :span="8">
+                            right
+                        </el-col>
+                    </el-row>
                 </el-col>
-                <el-col :span="8">
-                    right
-                </el-col>
+                <el-col :xs="0" :sm="3" :md="3" :lg="3">&nbsp;</el-col>
             </el-row>
         </el-main>
     </el-container>
