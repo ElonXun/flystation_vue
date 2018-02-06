@@ -12,7 +12,16 @@
                             <ArticleSelect/>   
                         </el-col>
                         <el-col :span="8">
-                            right
+                            <!-- <div className={styles.rightNav}>
+                                <div className={styles.rightNavContainer}>
+                                    <RightNavHeader iconType={'like-o'} navTitle={'阅读最多'} />
+                                </div>
+                                <div className={styles.rightNavContainer}>
+                                    <RightNavHeader iconType={'tag-o'} navTitle={'标签'} />
+                                    <div className={styles.tagsContainer}>
+                                    </div>
+                                </div>
+                            </div> -->
                         </el-col>
                     </el-row>
                 </el-col>
